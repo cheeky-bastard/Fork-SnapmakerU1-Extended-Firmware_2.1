@@ -1,6 +1,6 @@
 # Snapmaker U1 calibration firmware — 2.1
 
-**Maintainer: cheeky-bastard | Restored: 2026-11-14**
+**Maintainer: cheeky-bastard | Restored: 2026-11-14 | Synced: 2026-11-18**
 
 Personal Paxx-based firmware with independent T1/T2/T3 calibration and a guarded mixed-nozzle print-start workaround. T0 directs the operator to stock full calibration; clean/validate saves nothing.
 
@@ -8,7 +8,7 @@ Read the [usermod instructions](overlays/mods/cheeky_b52/README.md), [full calib
 
 These are web UI macro buttons. In Mainsail, put the seven primary buttons in a **Tool Calibration** macro group and enable Standby visibility.
 
-Pinned upstream: `4eda2d5191adca26c32033166fe5dfab150c2ce3`. Reviewed native/CFG payload hashes are unchanged. **2026-11-18 upstream update:** This source includes 19 newer Paxx develop commits: camera-stack changes, Spoolman/SpoolLink improvements, Pushraker notifications, and component updates. The stock firmware, calibration/CFG/nozzle payloads and source guards are unchanged. The new full-image CI run is pending; the previous restored image remains available in Releases with its original test record. On-printer acceptance of the new image is pending. Obtain verified configuration/native backups before persistent printer changes. Use normal operation without debug or factory mode.
+Pinned upstream: `4eda2d5191adca26c32033166fe5dfab150c2ce3`. Reviewed native/CFG payload hashes are unchanged. **Verified 2.1 sync — 2026-11-18:** This source includes 19 newer Paxx develop commits for camera handling, Spoolman/SpoolLink, Pushraker notifications and component updates. [Download the new 2.1 image](https://github.com/cheeky-bastard/Fork-SnapmakerU1-Extended-Firmware_2.1/releases/tag/calibration-2.1-synced-2-1). Its [CI run](https://github.com/cheeky-bastard/Fork-SnapmakerU1-Extended-Firmware_2.1/actions/runs/44243530475) passed 64 calibration regressions, eight nozzle checks, six packed-payload hashes, container round trips and header/extra-MCU preservation. The public checksum/source identity and unchanged native/config payload hashes are verified. On-printer acceptance of this image is pending. Obtain verified configuration/native backups before persistent printer changes. Use normal operation without debug or factory mode.
 
 ## Attribution
 
