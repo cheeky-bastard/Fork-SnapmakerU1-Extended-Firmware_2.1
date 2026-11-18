@@ -200,12 +200,14 @@ jobs:
           GH_REPO: cheeky-bastard/Fork-SnapmakerU1-Extended-Firmware_2.1
         run: |
           set -euo pipefail
-          tag="calibration-2.1-restored-${GITHUB_RUN_NUMBER}-${GITHUB_RUN_ATTEMPT}"
+          tag="calibration-2.1-synced-${GITHUB_RUN_NUMBER}-${GITHUB_RUN_ATTEMPT}"
           notes_file="$RUNNER_TEMP/calibration-release-notes.md"
           cat > "$notes_file" <<'NOTES'
           Experimental firmware 2.1 community test build of the independent tool calibration usermod.
 
-          Based on the reviewed Paxx firmware 2.1.0.157 at upstream commit 36fbd40c63ad83818ef3a7b2f8facef48814dd58. This is a separate 2.1 port; prior printer tests remain specific to their original source/image sets.
+          Synced to Paxx develop on 2026-11-18, including 19 upstream commits for camera handling, Spoolman/SpoolLink, Pushraker notifications and component updates. The stock firmware, calibration native files, CFG, nozzle workaround and exact source guards are unchanged.
+
+          Based on the reviewed Paxx firmware 2.1.0.157 at upstream commit 4eda2d5191adca26c32033166fe5dfab150c2ce3. This is a separate 2.1 port; prior printer tests remain specific to their original source/image sets.
 
           - Press T1/T2/T3 directly to start; separate backup arming is optional and disabled by default. Independent saves preserve the other three tools and shared reference.
           - T0 displays a warning to use stock four-tool calibration.

@@ -46,3 +46,7 @@ The 2.1 image requires separate hardware acceptance.
 ## Restoration — 2026-11-14
 
 Restored under `cheeky-bastard` on 2026-11-14. Historical source banners, copyright notices and exact native/CFG payload hashes are retained. Old account URLs in source comments and historical records identify provenance; current project links use the new account. The stable `cheeky_b52` mod namespace is retained for compatibility. No upstream PR is authorized.
+
+## Upstream integration — 2026-11-18
+
+Rebased this optional usermod onto Paxx develop `4eda2d5191adca26c32033166fe5dfab150c2ce3`. The custom calibration native patch, CFG, nozzle workaround and exact source guards are unchanged. Only this notice and build documentation changed within the usermod. Upstream notices and licensing remain intact; no upstream endorsement is implied.
