@@ -8,7 +8,7 @@ Read the [usermod instructions](overlays/mods/cheeky_b52/README.md), [full calib
 
 These are web UI macro buttons. In Mainsail, put the seven primary buttons in a **Tool Calibration** macro group and enable Standby visibility.
 
-Pinned upstream: `36fbd40c63ad83818ef3a7b2f8facef48814dd58`. Reviewed native/CFG payload hashes are unchanged. **Verified build available:** [Download the restored 2.1 image](https://github.com/cheeky-bastard/Fork-SnapmakerU1-Extended-Firmware_2.1/releases/tag/calibration-2.1-restored-1-1). The [new CI run](https://github.com/cheeky-bastard/Fork-SnapmakerU1-Extended-Firmware_2.1/actions/runs/43561270736) passed 64 calibration regressions, eight nozzle checks, six packed-payload hashes, container round trips, and header/extra-MCU preservation. Public checksums and source identity are verified. On-printer acceptance of the new image is pending. Obtain verified configuration/native backups before persistent printer changes. Use normal operation without debug or factory mode.
+Pinned upstream: `4eda2d5191adca26c32033166fe5dfab150c2ce3`. Reviewed native/CFG payload hashes are unchanged. **2026-11-18 upstream update:** This source includes 19 newer Paxx develop commits: camera-stack changes, Spoolman/SpoolLink improvements, Pushraker notifications, and component updates. The stock firmware, calibration/CFG/nozzle payloads and source guards are unchanged. The new full-image CI run is pending; the previous restored image remains available in Releases with its original test record. On-printer acceptance of the new image is pending. Obtain verified configuration/native backups before persistent printer changes. Use normal operation without debug or factory mode.
 
 ## Attribution
 
