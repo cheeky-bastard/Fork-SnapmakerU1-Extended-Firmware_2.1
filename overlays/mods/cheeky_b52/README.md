@@ -1,6 +1,6 @@
 # Independent tool calibration
 
-**Project: 0.3.0-dev1 | CFG: 0.1.1 | Nozzle workaround: 0.1.1 | Updated: 2026-10-29**
+**Project: 0.3.0-dev1 | CFG: 0.1.1 | Nozzle workaround: 0.1.1 | Updated: 2026-11-18**
 
 Optional usermod maintained by cheekyb52. Compose it with the existing extended
 firmware using `PROFILE=extended-cheeky_b52`. This adds no new base firmware profile.
@@ -52,7 +52,7 @@ still needs its own hardware acceptance.
 
 Place this directory at `overlays/mods/cheeky_b52/` in the Extended Firmware repository.
 The live-tested upstream commit is `4bd40f7eb4e396d275c7ede0b7f15d0788588696`.
-The 2.1 port is based on upstream `36fbd40c63ad83818ef3a7b2f8facef48814dd58`
+The 2.1 port is based on upstream `4eda2d5191adca26c32033166fe5dfab150c2ce3`
 (2026-10-29), using stock firmware `2.1.0.157`. Paxx labels this an initial
 rolling/develop build. Firmware container round trips, header-version preservation
 and byte-identical extra MCU payload checks are required before publication.
@@ -148,3 +148,7 @@ Independently maintained on a best-effort basis.
 ## Restoration — 2026-11-14
 
 Restored under `cheeky-bastard` on 2026-11-14. Historical source banners, copyright notices and exact native/CFG payload hashes are retained. Old account URLs in source comments and historical records identify provenance; current project links use the new account. The stable `cheeky_b52` mod namespace is retained for compatibility. No upstream PR is authorized.
+
+## Upstream develop sync — 2026-11-18
+
+The source now includes upstream `4eda2d5191adca26c32033166fe5dfab150c2ce3` (19 commits after the prior 2.1 base). Updates cover camera handling, Spoolman/SpoolLink, Pushraker notifications and packaged components. Stock firmware 2.1.0.157 is unchanged, as are all nine custom runtime/guard files and six packed-payload expectations. The source guards remain enabled. Earlier printer evidence remains specific to its original image; new-image CI and hardware acceptance are recorded separately.
